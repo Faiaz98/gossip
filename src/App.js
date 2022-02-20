@@ -1,10 +1,16 @@
-import "./styles.css";
+import { ChatEngine } from "react-chat-engine";
 
-export default function App() {
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <ChatEngine
+      height="100vh"
+      projectID="8957c983-ea0d-465b-99de-e04d30d51e6e"
+      userName="Faiaz"
+      userSecret="123123"
+    />
   );
-}
+};
+
+export default App;
